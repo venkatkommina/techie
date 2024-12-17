@@ -45,7 +45,7 @@ export default function Page() {
                 textAlign: "center",
               }}
             >
-              TECHFEST IIT ROPER
+              TECHFEST IIT ROPAR
             </div>
             <div
               className="text-white"
