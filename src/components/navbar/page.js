@@ -9,9 +9,9 @@ export default function page() {
   return (
     // <div className="sticky top-0">
     <div>
-      <section className="bg-[#12181E] flex justify-between items-center px-[4%] py-[1%]">
-      <div className="w-[13%]">
-  <div className="aspect-[243/52]">
+      <section className="bg-[#12181E] flex justify-between items-center px-[4%] py-[1.4%]">
+      <div className="w-[17%]">
+  <div className="aspect-[895/127]">
     <Image
       src={logo}
       alt="../"
@@ -22,10 +22,11 @@ export default function page() {
          <div className="flex">
           <Link href="/signin"><button className="text-white py-[2%] px-8  text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5" >
             SIGN IN
-          </button></Link>
-          <button>
-            <Menu />
-          </button>
+ </Link>
+         
+          <div>
+             <Menu />
+          </div>
         </div>
       </section>
     </div>
