@@ -2,40 +2,31 @@ import React from "react";
 import Image from "next/image";
 import logo from "../../../public/assests/images/logoMain.png";
 import arrow from "../../../public/assests/images/aboutusLogo.png";
-
+import Menu from '../menu/page'
 export default function page() {
+  
   return (
+    // <div className="sticky top-0">
     <div>
-      <section
-        style={{
-          backgroundColor: "rgb(18 24 30)",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding:"32px 50px"
-        }}
-      >
-        <Image
-          src={logo}
-          alt="../"
-          style={{ width: "243px", }}
-        />
-        <div style={{ color: "white" }}>0 0 0 0 0 0</div>
-        <div style={{ display: "flex" }}>
-          <button style={{ 
-            color: "white",
-              padding:"7px 30px",
-             borderRadius:"20px",
-             fontSize:"20px",
-             backgroundImage:"linear-gradient(to bottom, rgba(67, 242, 127, 1), rgba(10, 119, 47, 1))",
-             margin:"0px 20px 0px 0px"
-              }}>
+      <section className="bg-[#12181E] flex justify-between items-center px-[4%] py-[1%]">
+      <div className="w-[13%]">
+  <div className="aspect-[243/52]">
+    <Image
+      src={logo}
+      alt="../"
+      className="object-contain w-full h-full"
+    />
+  </div>
+</div>
+         <div className="flex">
+          <button className="text-white py-[2%] px-8  text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5">
             SIGN IN
           </button>
-          <button style={{ color: "white" }}>MENU</button>
+          <button>
+            <Menu />
+          </button>
         </div>
       </section>
-     
     </div>
   );
 }
