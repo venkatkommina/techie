@@ -8,7 +8,7 @@ export default function page() {
   return (
     // <div className="sticky top-0">
     <div>
-      <section className="bg-[#12181E] flex justify-between items-center px-[4%] py-[1%]">
+      <section className="bg-[#12181E] flex justify-between items-center px-[4%] py-[1.4%]">
       <div className="w-[17%]">
   <div className="aspect-[895/127]">
     <Image
