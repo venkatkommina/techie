@@ -60,38 +60,10 @@ export default function Page() {
         className="bg-cover bg-center h-[120vh] w-full bg-no-repeat"
         style={{ backgroundImage: "url('/assests/images/Homepage.png')" }}
       >
-         <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%]">
+        <div className="flex justify-between px-[5%] 2xl:pt-[0%] xl:pt-[5%] lg:pt-[8%] md:pt-[7%]">
           <div className="flex flex-col mt-[9%] w-[50%] ">
             <div className="text-white bg-gradient-to-r from-green-500 to-green-500/0 text-xl w-[290px] xl:[200px] py-[2%] m rounded-full text-center">
-         <div
-          style={{
-            display: "flex",
-            // alignItems: "center",
-            padding: "0px 60px",
-            justifyContent: "space-between",
-          }}
-        >
-          <div
-            className=""
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              marginTop: "9%",
-            }}
-          >
-            <div
-              className="text-white"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, rgba(56, 219, 112, 1), rgba(56, 219, 112, 0))",
-                fontSize: "24px",
-                width: "290px",
-                padding: "10px 15px",
-                borderRadius: "30px",
-                textAlign: "center",
-              }}
-            >
-               TECHFEST IIT ROPAR
+              TECHFEST IIT ROPAR
             </div>
             <div className=" leading-[100px] text-white 2xl:text-[190px] xl:text-[140px] lg:text-[130px]  md:text-[100px] sm:text-[100px] text-[40px] 2xl:leading-[190px] xl:leading-[150px] lg:leading-[130px] md:leading-[100px]    font-normal font-[Impact] leading-[231.75px]">
               ADVITIYA,24
