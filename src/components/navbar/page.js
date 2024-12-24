@@ -21,7 +21,7 @@ export default function page() {
 </div>
          <div className="flex">
           <Link href="/signin"><button className="text-white py-[2%] px-8  text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5" >
-            SIGN IN
+            SIGN IN</button>
  </Link>
          
           <div>
