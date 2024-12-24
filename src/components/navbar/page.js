@@ -9,8 +9,8 @@ export default function page() {
     // <div className="sticky top-0">
     <div>
       <section className="bg-[#12181E] flex justify-between items-center px-[4%] py-[1%]">
-      <div className="w-[13%]">
-  <div className="aspect-[243/52]">
+      <div className="w-[17%]">
+  <div className="aspect-[895/127]">
     <Image
       src={logo}
       alt="../"
