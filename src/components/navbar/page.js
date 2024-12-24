@@ -22,9 +22,9 @@ export default function page() {
           <button className="text-white py-[2%] px-8  text-lg rounded-full bg-gradient-to-b from-[#43F27F] to-[#0A772F] mr-5">
             SIGN IN
           </button>
-          <button>
+          <div>
             <Menu />
-          </button>
+          </div>
         </div>
       </section>
     </div>

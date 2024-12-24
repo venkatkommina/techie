@@ -42,7 +42,7 @@ export default function Menu() {
           <div className="text-center text-white space-y-4">
           <Link href="/" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Home</Link>
           <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Workshops</Link>
-          <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Events</Link>
+          <Link href="/events" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Events</Link>
             <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Our Team</Link>
             <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Contact US</Link>
           </div>
