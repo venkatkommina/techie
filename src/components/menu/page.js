@@ -1,6 +1,8 @@
 'use client'
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from 'next/link';
+
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,10 +40,11 @@ export default function Menu() {
 
           {/* Menu Items */}
           <div className="text-center text-white space-y-4">
-            <button className="text-3xl hover:text-green-400 px-10">Workshops</button>
-            <button className="text-3xl hover:text-green-400 px-10">Events</button>
-            <button className="text-3xl hover:text-green-400 px-10">Our Team</button>
-            <button className="text-3xl hover:text-green-400 px-10">Contact Us</button>
+          <Link href="/" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Home</Link>
+          <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Workshops</Link>
+          <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Events</Link>
+            <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Our Team</Link>
+            <Link href="/comingSoon" onClick={toggleMenu} className="text-3xl hover:text-green-400 px-10">Contact US</Link>
           </div>
         </motion.div>
       )}
