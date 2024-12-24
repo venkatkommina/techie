@@ -1,10 +1,40 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import DecorativeFrame from "@/components/signin/frame";
+import { User, Mail, Phone, X } from "lucide-react";
+import { FaFacebookF } from "react-icons/fa";
+import { TbBrandInstagramFilled, TbBrandTiktokFilled, TbBrandYoutubeFilled } from "react-icons/tb";
 const App = () => {
+
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="relative">
-      <div className="h-[85vh] relative w-full bg-[#10171D]">
+      <div style={{ transform: `translateY(${scrollY * 0.5}px` }} className="h-[85vh] relative  w-full bg-[#10171D]">
         <div
           className="h-full w-full absolute shadow-2xl shadow-[#10171D] bg-cover bg-top bg-no-repeat"
           style={{ backgroundImage: "url('/signin/bg1.png')" }}>
@@ -21,13 +51,13 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="h-[100vh] relative w-full bg-[#10171D]">
+      <div style={{ transform: scrollY > 700 ? `translateY(${(scrollY - 700) * 0.4}px` : '' }} className="h-[100vh]  relative w-full bg-[#10171D]">
         <div
           className="h-full w-full absolute shadow-2xl shadow-[#10171D] bg-cover bg-top bg-no-repeat"
           style={{ backgroundImage: "url('/signin/fbg2.png')" }}>
 
 
-          <img src="/signin/bg2b.png" alt="background image" className="w-full z-10 pointer-events-none absolute bg-no-repeat bottom-0" />
+
 
 
           <div className="flex h-full w-full">
@@ -59,13 +89,15 @@ const App = () => {
           </div>
         </div>
       </div>
-      <div className="h-[100vh] relative w-full bg-[#10171D]">
+      <div style={{ transform: scrollY > 900 ? `translateY(${(scrollY - 900) * 0.2}px` : '' }} className="h-[100vh] relative  w-full bg-[#10171D]">
         <div
           className="h-full w-full absolute shadow-2xl shadow-[#10171D] bg-cover bg-top bg-no-repeat"
           style={{ backgroundImage: "url('/signin/bg3.png')" }}>
 
 
-          <img src="/signin/bg3b.png" alt="background image" className="w-full z-10 pointer-events-none absolute bg-no-repeat bottom-0" />
+
+
+
 
           <div className="flex h-full w-full">
 
@@ -97,6 +129,8 @@ const App = () => {
 
           </div>
         </div>
+        <img src="/signin/bg3b.png" alt="background image" className={`w-full z-10 pointer-events-none absolute bg-no-repeat bottom-[0]`} />
+        <img src="/signin/bg2b.png" alt="background image" className={`w-full z-10 pointer-events-none absolute bg-no-repeat bottom-[calc(100vh-120px)]`} />
       </div>
 
 
@@ -117,6 +151,11 @@ const App = () => {
       >
       </section> */}
       {/*  */}
+
+
+
+
+
     </div>
 
   );

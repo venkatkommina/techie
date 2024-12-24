@@ -4,7 +4,7 @@ import { TbBrandInstagramFilled, TbBrandTiktokFilled, TbBrandYoutubeFilled } fro
 
 export default function Footer() {
   return (
-    <div className="h-[185vh] relative w-full bg-[#10171D]">
+    <div className="h-[185vh] relative w-full z-0">
       <div
         className="h-full w-full absolute bottom-0 shadow-2xl shadow-[#10171D] bg-cover bg-top bg-no-repeat"
         style={{ backgroundImage: "url('/signin/bg4.png')" }}
