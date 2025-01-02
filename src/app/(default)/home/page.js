@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import Image from "next/image";
 import mascot from "../../../../public/assests/images/mascot1.png";
@@ -8,7 +10,6 @@ import Lvideo from "../../../../public/assests/images/Lvideo.png";
 import sec3bg from "../../../../public/assests/images/sec3bg.png";
 
 export default function Page() {
-
   const cards = [
     {
       id: 1,
@@ -168,7 +169,11 @@ export default function Page() {
                   >
                     {/* #36362f */}
                     <div className="bg-gradient-radial from-[3131b23] to-[#36362f]">
-                      <Image src={mascot} className="w-[240px]" alt="Decoration" />
+                      <Image
+                        src={mascot}
+                        className="w-[240px]"
+                        alt="Decoration"
+                      />
                     </div>
                     <h3 className="text-3xl font-semibold text-white  ">
                       {card.title}
